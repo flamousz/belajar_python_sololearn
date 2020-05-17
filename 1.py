@@ -342,4 +342,36 @@ while gelut:
         break
 print('wilujeng')
 
+# 15 mei 20 00.18 start
+# For Loop
+words = ['aku', 'ingin', 'mahir', 'python', 'dengan', 'masagi']
+counter = 0
+max_index = len(words) - 1
+while counter <= max_index :
+    word = words[counter]
+    print(word + '!')
+    counter = counter + 1
 
+print('\n')
+words = ['aku', 'ingin', 'mahir', 'python', 'dengan', 'masagi']
+counter = 0
+while counter < len(words):
+    word = words[counter]
+    print(word + '!')
+    counter+=1
+
+# 15 mei 20 01.33 istirahat
+# 16 Mei 20 01.52 Start
+'''
+Iterating through a list using a while loop requires quite a lot of code
+, so python provides the for loop as a shortcut that acconplishes the same thing.
+the same code from the previrous example can be written with a for loop, as follow '''
+
+worlds = ['aku', 'ingin', 'mahir', 'python', 'dengan', 'masagi']
+for word in worlds :
+    print(word + '!')
+
+for i in range(4):
+    print('good')
+
+# 16 mei 20 02.15 istirahat
