@@ -375,3 +375,45 @@ for i in range(4):
     print('good')
 
 # 16 mei 20 02.15 istirahat
+
+
+# 16 mei 20 02.16 start
+
+# 16 mei 20 02.45 istirahat puyeng
+# 17 mei 20 01.28 start
+# Simple Calculator
+
+while True:
+    print("Option:")
+    print('enter "add" to add two numbers')
+    print('enter "substract" to substract two numbers')
+    print('enter "multiply" to multiply two numbers')
+    print('enter "divide" to divide two numbers')
+    print('enter "quit" to end the program')
+    user_input = (input (':'))
+    if user_input == "quit":
+        break
+    elif user_input == "add":
+        num1 = float(input('input a number:'))
+        num3 = float(input('input another number:'))
+        result = str(num1 + num2)
+        print('ther result is ' + result) 
+    elif user_input == "multiply":
+        num1 = float(input('input a number:'))
+        num2 = float(input('input another number:'))
+        result = str(num1 * num2)
+        print('the result is ' + result)
+    elif user_input == "substract":
+        num1 = float(input('input a number:'))
+        num2 = float(input('input another number:'))
+        result = str(num1 - num2)
+        print('the result is ' + result)
+
+    elif user_input == "divide":
+        num1 = float(input('input a number:'))
+        num2 = float(input('input another number:'))
+        result = str(num1 / num2)
+        print('the result is' + result)
+    else:
+        print('Unknown input')
+
