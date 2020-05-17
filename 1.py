@@ -416,4 +416,43 @@ while True:
         print('the result is' + result)
     else:
         print('Unknown input')
+        
+        
+        
+# 17 mei 20 15.00 start
+
+list=[1,2,2,2,3,1,2,8,2]
+print(list[list[5]])
+
+for i in range(10):
+    if not i % 2 == 0:
+        print(i + 1)
+
+'''
+the range is [0,1,2,3,4,5,6,7,8,9] 
+
+modulus is remainder after division basically. You can test it out in IDLE like
+0%2=0, 1%2=1,2%2=0,3%2=1,4%2=0,5%2=1, etc. 
+the program is asking if a number in the range modulus 2 does NOT equal 0, 
+print that number plus 1 soooo print 2 first 
+because 1%2=1 so 1+1=2 then 3%2=1 so 3+1=4, 5%2=1 so 5+1=6, 
+etc til you get to 9%2=1 so 9+1=10 
+making it print even #s 2,4,6,8,10 Hope this helps and is clear as mud!!! '''
+
+list = [1, 2, 3, 4]
+if len(list) % 2 == 0:
+    print(list[0])
+
+letters = ['w', 'e', 'q', 'w']
+letters.insert(1,'w')
+print(letters[2])
+
+list = [1, 2, 3, 4]
+for var in list:
+    print(var)
+
+'''
+fill in the blanks to iterate over the list using a for loop and print its values '''
+
+# 17 mei 20 15.57 istirahat
 
