@@ -256,4 +256,90 @@ r.reverse()
 print(r)
 
 
+# while loop
+i = 1
+while i <= 2:
+    print(i)
+    i = i + 1
+print('finished!')
+
+i = 3
+while i >= 0:
+    print(i)
+    i = i - 1
+print('done bitch')
+
+x = 0
+while x <= 4:
+    print(x)
+    x+=2
+print('dayum')
+
+# 9 mei 20 23.30
+
+# break
+# contoh 1
+i = 0
+while 1==1:
+    print(i)
+    i = i + 1
+    if i >= 5:
+        print('break !')
+        break
+print("finished")
+
+# contoh 2
+i=0
+while i<5:
+    print(i)
+    i+=1
+print('breaking!')
+print('finished')
+
+# contoh 3
+i = 5
+while True:
+    print(i)
+    i=i-1
+    if i <= 2:
+        break
+
+# continue
+# contoh 1
+i = 0
+while True:
+    i = i + 1
+    if i == 2:
+        print('skipping 2')
+        continue
+    if i == 5:
+        print('break')
+        break
+    print(i)
+print('Finished')
+
+
+# contoh 2
+aboi = 30
+kujang = 1
+gelut = True
+
+while gelut:
+    aboi=aboi - 1
+    print ('maneh nyerang si aboi! Darah:')
+    print(aboi)
+    if aboi == 15:
+        print('si aboi setengah deui darah na')
+        continue
+    elif aboi == 10:
+        print('paehan si aboi!')
+        continue
+    elif aboi == 5:
+        print('ayeuna kesempatan maneh')
+        continue
+    if aboi <= 0:
+        print('aboi ges paeh')
+        break
+print('wilujeng')
+
 
