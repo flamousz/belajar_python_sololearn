@@ -456,3 +456,40 @@ fill in the blanks to iterate over the list using a for loop and print its value
 
 # 17 mei 20 15.57 istirahat
 
+# 17 mei 20 22.01 start
+# git dan github tutorial yt
+# 18 mei 20 00.06 istirahat
+# 21 mei 20 02.07 start
+
+# code reuse
+'''
+Reusing Code
+Code reuse is a very important part of programming in any language. 
+Increasing code size makes it harder to maintain. For a large programming project to be successful, 
+it is essential to abide by the Don't Repeat Yourself, or DRY, principle. 
+We've already looked at one way of doing this: by using loops. In this module, 
+we will explore two more: functions and modules.'''
+
+x = list(range(0,100,5)) # x adalah sebuah fungsi
+print(x) # didalam list range terdapat 3 argumen
+
+# functions
+'''
+Functions
+
+In addition to using pre-defined functions, 
+you can create your own functions by using the def statement.
+Here is an example of a function named my_func. 
+It takes no arguments, and prints "spam" three times. It is defined, and then called. 
+The statements in the function are executed only when the function is called. '''
+
+def my_func():
+    print('spam\n'*3)
+
+my_func()
+'''
+the code block within every function starts with a colon (:) and is indented '''
+'''
+you must define functions before they are called, 
+in the same way that you must assign variables before using them '''
+
