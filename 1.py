@@ -493,3 +493,110 @@ the code block within every function starts with a colon (:) and is indented '''
 you must define functions before they are called, 
 in the same way that you must assign variables before using them '''
 
+
+# 21 5 20 22.56 start
+
+# Arguments
+'''
+All the function definitions we've looked at so far have been functions of zero arguments, 
+which are called with empty parentheses. However, most functions take arguments.
+The example below defines a function that takes one argument:'''
+
+def print_with_exclamation(word):  # () adalah parentheses
+    print(word + '!')
+
+print_with_exclamation('spam')
+print_with_exclamation('eggs')
+print_with_exclamation('pythons')
+# as you can see, the argument is defined inside the parentheses
+
+'''When defining a new function is a good practice to use a name for the argument 
+that is different from the name of a variable already used in the program, 
+because when calling the function at the argument is passed the VALUE of a variable 
+and not the variable itself. 
+
+Example: '''
+x = 1
+def MyFunction(x):
+    print(x)
+    x += 1
+MyFunction(x)
+print(x)
+
+'''
+Result:
+1
+1
+The value of the x variable remain 1 because we get something like this: x argument = x variable.
+
+
+So to avoid confusion it's better to write down like this: '''
+
+x = 1
+def MyFunction(xArgument):
+    print(xArgument)
+    xArgument += 1
+MyFunction(x)
+print(x)
+
+''' So I'm guessing the argument (word) is an empty variable waiting to be filled 
+with a value when you use the function and put something within the parentheses '''
+
+# example
+def print_double(x):
+    print(3 * x)
+
+print_double(2)
+
+'''
+ You can also define function with more than one argument, separate them with commas '''
+
+def print_sum_commas(x, y):
+     print( (x + y) )
+
+e = input('put your number:')
+print(e)
+r = input('put your number:')
+print(r)
+print_sum_commas(float(e), float(r))
+'''
+ there is a float conversion cause the user input you get using input function is a string value.
+ to perform mathematical addition you have to convert the string to float. 
+
+ 
+ Function arguments can be used as variables inside the function definition. 
+ However, they cannot be referenced outside of the function's definition. 
+ This also applies to other variables created inside a function. '''
+
+def function(variable): # variable adalah parameter
+    variable +=1 
+    print(variable)
+
+function(7) # 7 adalah argumen
+# print_double(variable) <<< variable not defined so its error
+'''
+Technically, parameters are the variables in a function definition, 
+and arguments are the values put into parameters when functions are called.
+
+The difference between ARGUMENTS and PARAMETERS: 
+Arguments can be changed every time you call the function. 
+Parameters are used when defining the function. In the example shown,  
+(variable)  is a PARAMETER and (7) is the ARGUMENT. '''
+
+# example
+def ganjil_genap(utas):
+    if utas % 2 == 0: # % is remainder of an integer division
+        print('genap')
+    else:
+        print('ganjil')
+
+x = input('masukan angka:')
+print(x) # perintah disini untuk menampilkan angka yand diketik
+ganjil_genap(float(x))
+
+# 22 5 20 03.10 istirahat
+
+
+
+
+
