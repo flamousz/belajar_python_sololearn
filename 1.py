@@ -596,6 +596,83 @@ ganjil_genap(float(x))
 
 # 22 5 20 03.10 istirahat
 
+# 21 5 20 22.56 start
+# 22 5 20 03.10 istirahat
+# 22 5 20 01.20 start
+
+# Returning from Functions
+'''
+Certain functions, such as int or str, return a value that can be used later. 
+To do this for your defined functions, you can use the return statement. 
+The return statement cannot be used outside of a function definition'''
+
+# Example
+def max(x, y):
+    if x >= y:
+        return x
+    else:
+        return y
+
+print(max(4, 7))
+z = max(8, 4) #  z disini menjadi variabel baru yang merubah y menjadu 4 dan x menjadi 8
+print(z)
+
+'''
+Notice. The difference between Print and Return functions:
+- print function can only show us the result, 
+  but we could't use this result for the next calculations. 
+  If we are trying to deal with it (multiply, divide etc.), it'll show us None.
+- return function keeps the result for our ability to use it in the next calculations. 
+  So we can multiply or make a sum with the result of return function. '''
+
+'''
+ once you return a value from a function, it immediately stops being executed. 
+ any code after the return statement will never happen '''
+ # example
+def add_number(x, y):
+     total = x + y
+     return total
+     print ('this wont be printed')
+
+print(add_number(2, 3))
+'''
+Let me clear it a bit more!
+maybe this is your question:
+what's the difference between (return) & (print) ?
+As I know, there are two differences:
+
+   1. After using (return) in a function, the next lines will be ignored. 
+But if we use (print), all the next lines will be evaluated and run.
+
+   2. If you use (return) inside a function, you can do some operations on the result. e.g. multiply it by another value or... .
+But if we use (print),you can't do any operations on the result.
+
+For better understanding check this code:
+'''
+def  sum(x,y):
+    return  x+y     #output:  18
+print(sum(4,5)*2)
+
+def  sum(x,y):
+    print(x+y)
+# sum(4,5)* 2       #output: ERROR
+'''
+because when we use (print), we can only display things.
+but when we use (return), we can either display and sum and...
+Just keep this in mind that you can't do operations on:  print ( ) '''
+
+# quiz
+def print_number():
+    print(1)
+    print(2)
+    return
+    print(3)
+    print(4)
+
+print_number()
+
+# 22 5 20 02.29 istirahat
+
 
 
 
