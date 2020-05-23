@@ -671,7 +671,94 @@ def print_number():
 
 print_number()
 
-# 22 5 20 02.29 istirahat
+# 23 5 20 02.29 istirahat
+
+# 23 5 20 02.29 istirahat
+# 24 5 20 01.16 start
+
+# Function as objects
+'''
+although they are created differently from normal variables,
+functions are just like any other kind of value. they can be assigned to variables,
+and later referenced by those names '''
+
+# example
+def multiply(x, y):
+    return x*y
+x = 2
+y = 6
+operation = multiply
+print(operation(x, y))
+
+# example 2
+def shout(word):
+    return word+'!'
+speak = shout
+output = speak('jujun')
+print(output)
+
+# ex 3
+def shout(word):
+    return word*2
+
+word = 4
+print(shout(word))
+
+# Functions can also be used as arguments of other functions
+def add(x, y):
+    return x+y
+
+def do_twice(func, x, y):
+    return func(func(x, y), func(x,y))
+
+a = 5
+b = 10
+print(do_twice(add, a, b))
+
+# ass you can see, the function do _twice takes a function as its argument and calls it in its body
+
+'''
+This is how me and Python had this conversation:
+
+Me: def add(x,y)
+		return x + y
+
+Python: The function you have defined as add(x,y) will find the sum of the arguments substituted for x and y.
+
+Me: def do_twice(func,x,y)
+		return func(func(x,y),func(x,y))
+
+Python: The statement you have defined as do_twice(func,x,y) will take 3 arguments and substitute them for func, x, and y.
+
+Me: a=5
+	  b=10
+
+Python: You have set the variables a and b to the integer 5 and 10.
+
+Me: print (do_twice(add,a,b))
+
+Python: The arguments add, a, and b will be substituted for func, x, and y. The return for do_twice function now reads as followed;
+
+		return add(add(a,b),add(a,b))
+	
+	The sum of variables a and b, which are 5 and 10, is 15.
+	Since the first function is add(x,y) the sum of a and b will take the place of x and y, 
+    which will be functioned again to get the sum of 30.
+	Output is integer 30.
+	
+	Me: Much appreciated Python!!!! '''
+
+# test 1
+def square(x):
+    return x*x
+
+def tes(func, x):
+    print(func(x))
+
+tes(square,5)
+
+# 24 5 20 01.16 start
+# 24 5 20 02.36 istirahat
 
 
 
